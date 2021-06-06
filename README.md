@@ -5,7 +5,7 @@
 
 the section | subject
 ------------ | -------------
-section one | [challenge 01](challenge-01/README.md))
+section one | [challenge 01](challenge-01/README.md)
 section two | 
 section three | 
 Section Four | 
