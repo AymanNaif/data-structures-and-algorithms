@@ -6,7 +6,7 @@
 | -------------- | -------------------------------------- |
 | section one    | [challenge 01](challenge-01/README.md) |
 | section two    | [challenge 02](challenge-02/README.md) |
-| section three  |
+| section three  | [challenge 03](challenge-03/README.md) |
 | Section Four   |
 | Section Five   |
 | Section six    |
