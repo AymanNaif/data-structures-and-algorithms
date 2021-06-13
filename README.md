@@ -9,7 +9,7 @@
 | section three  | [challenge 03](challenge-03/README.md)                                                                               |
 | Section Four   | [challenge 04](https://docs.google.com/spreadsheets/d/11jCmZciGvRuKhXDzqX7kuDSQAOOGw7GARvPqL2YpGGU/edit?usp=sharing) |
 | Section Five   | [challenge 05](Data-Structures/challenge-05/linked-list/README.md)                                                   |
-| Section six    |
+| Section six    | [challenge 06](Data-Structures/challenge-06/linked_list_insertions/README.md)                                        |
 | Section seven  |
 | Section nine   |
 | Section ten    |
