@@ -63,9 +63,17 @@ class LinkedList:
         # "{ a } -> { b } -> { c } -> NULL"
         # Loop over all nodes
         # print all values in one line
-
+        strr = ''
         for x in range(len(self.node_lst)):
-            return f" {self.node_lst[x]} -> {self.node_lst[x+1]} -> {self.node_lst[x+2]} -> {self.node_lst[x+3]}  -> NULL "
+            if x == 0:
+                strr += ' { ' + str((self.node_lst[x])) + ' } -> '
+            elif x == len(self.node_lst)-1:
+                strr += '{ '+str((self.node_lst[x])) + ' }  -> NULL '
+            else:
+                strr += '{ '+str((self.node_lst[x])) + ' } -> '
+
+        # strr += 'NULL '
+        return strr
 
     def __repr__(self):
         return 'Nothing'

@@ -59,7 +59,7 @@ def test_str():  # 8
     ll.append(0)
     ll.insert(74)
     ll.__str__()
-    assert ll.__str__() == " 74 -> True -> a -> 0  -> NULL "
+    assert ll.__str__() == " { 74 } -> { True } -> { a } -> { 0 }  -> NULL "
 
 
 def test_include():  # 9
