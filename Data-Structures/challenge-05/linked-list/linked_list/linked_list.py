@@ -66,11 +66,11 @@ class LinkedList:
         strr = ''
         for x in range(len(self.node_lst)):
             if x == 0:
-                strr += ' ' + str((self.node_lst[x])) + ' -> '
+                strr += ' { ' + str((self.node_lst[x])) + ' } -> '
             elif x == len(self.node_lst)-1:
-                strr += str((self.node_lst[x])) + '  -> NULL '
+                strr += '{ '+str((self.node_lst[x])) + ' }  -> NULL '
             else:
-                strr += str((self.node_lst[x])) + ' -> '
+                strr += '{ '+str((self.node_lst[x])) + ' } -> '
 
         # strr += 'NULL '
         return strr
