@@ -38,6 +38,7 @@ class LinkedList:
         """
         Adds a node of a value to the end of LL
         """
+
         node = Node(value)
         if not self.head:
             self.head = node
@@ -52,31 +53,44 @@ class LinkedList:
         """
         Return T/F if value is in the linked list or not
         """
-        if self.head is None:
+        if self.head == None:
             return False
         else:
             current = self.head
-            while current is not None:
+            while current != None:
                 if current.value == value:
                     return True
                 else:
                     current = current.next
             return False
 
-    def insertBefore(self, value, newValue):
-        node = Node(newValue)
-        for i in self.node_lst:
-            if i == value:
-                index_value = self.node_lst.index(i)
-        self.node_lst.insert(index_value, node.value)
+    # ---------> { 74 } -> { True } -> { ayman } -> { 0 } -> NULL" ---> { 74 } -> { hello world } -> { True } -> { ayman } -> { 0 } -> NULL"
+    def insertBefore(self, value, new_value):
+        current = self.head
+        node = Node(new_value)
+        if current.value == value:
+            node.next = current
+            current = node
+
+        while current.next is not None:
+            if current.next.value == value:
+                break
+            current = current.next
+
+        node.next = current.next
+        current.next = node
         return self.__str__()
 
-    def insertAfter(self, value, newValue):
-        node = Node(newValue)
-        for i in self.node_lst:
-            if i == value:
-                index_value = self.node_lst.index(i)
-        self.node_lst.insert(index_value+1, node.value)
+    def insertAfter(self, value, new_value):
+        current = self.head
+        node = Node(new_value)
+        while current != None:
+            if current.value == value:
+                break
+            current = current.next
+
+        node.next = current.next
+        current.next = node
         return self.__str__()
 
     def __str__(self):
@@ -92,12 +106,3 @@ class LinkedList:
 
     def __repr__(self):
         return 'Nothing'
-
-
-if __name__ == "__main__":
-    ll = LinkedList()
-    ll.append(True)
-    ll.append('ayman')
-    ll.append(0)
-    ll.insert(74)
-    print(ll.insertBefore(True, 'hello world'))

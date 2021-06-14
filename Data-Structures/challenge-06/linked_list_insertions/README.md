@@ -26,3 +26,7 @@ The linked list is alternative to an array-based structure. A linked list is col
 - `insertBefore(value, newVal) function` : which add a new node with the given newValue immediately before the first value
 
 - `insertAfter(value, newVal) function` : which add a new node with the given newValue immediately after the first value node
+
+## White Board
+
+![ll-insertions](../assets/ll-insertions.png)
