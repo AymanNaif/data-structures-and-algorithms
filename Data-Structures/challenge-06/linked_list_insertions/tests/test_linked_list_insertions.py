@@ -91,8 +91,9 @@ def test_insertBefore():  # 11
     ll.append('test')
     ll.append(0)
     ll.insert(74)
-    assert ll.insertBefore(
-        True, 'hello world') == " { 74 } -> { hello world } -> { True } -> { ayman } -> { test } -> { 0 }  -> NULL "
+    acutal = ll.insertBefore(True, 'hello world')
+    excepted = "{ 74 } -> { hello world } -> { True } -> { ayman } -> { test } -> { 0 } -> Null"
+    assert acutal == excepted
 
 
 def test_insertBefore_mid():  # 11
@@ -101,8 +102,9 @@ def test_insertBefore_mid():  # 11
     ll.append('ayman')
     ll.append(0)
     ll.insert(74)
-    assert ll.insertBefore(
-        True, 'hello world') == " { 74 } -> { hello world } -> { True } -> { ayman } -> { 0 }  -> NULL "
+    actual = ll.insertBefore(True, 'hello world')
+    excepted = "{ 74 } -> { hello world } -> { True } -> { ayman } -> { 0 } -> Null"
+    assert actual == excepted
 
 
 def test_insertAfter():  # 12
@@ -112,4 +114,4 @@ def test_insertAfter():  # 12
     ll.append(0)
     ll.insert(74)
     assert ll.insertAfter(
-        True, 'hello world') == " { 74 } -> { True } -> { hello world } -> { ayman } -> { 0 }  -> NULL "
+        True, 'hello world') == "{ 74 } -> { True } -> { hello world } -> { ayman } -> { 0 } -> Null"
