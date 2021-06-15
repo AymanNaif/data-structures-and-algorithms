@@ -11,6 +11,6 @@
 | Section Five   | [challenge 05](Data-Structures/challenge-05/linked-list/README.md)                                                   |
 | Section six    | [challenge 06](Data-Structures/challenge-06/linked_list_insertions/README.md)                                        |
 | Section seven  | [challenge 07](Data-Structures/challenge-07/ll-kth-from-end/README.md)                                               |
-| Section nine   |
+| Section nine   | [challenge 08](Data-Structures/challenge-08/ll_zip/README.md)                                                        |
 | Section ten    |
 | Section eleven |
