@@ -70,6 +70,9 @@ class LinkedList:
             return False
 
     def insertBefore(self, value, new_value):
+        """
+        add Node before specific one
+        """
         current = self.head
         node = Node(new_value)
         if current.value == value:
@@ -90,6 +93,9 @@ class LinkedList:
         return self.__str__()
 
     def insertAfter(self, value, new_value):
+        """
+        add Node After specific one
+        """
         current = self.head
         node = Node(new_value)
         counter = 0
@@ -106,18 +112,22 @@ class LinkedList:
         return self.__str__()
 
     def kthFromEnd(self, k):
+        """
+        takes a number (k) as a parameter.
+        Return the node’s value that is k from the end of the linked list
+        """
         if k >= len(self.node_lst):
             return 'out of index'
         elif k < 0:
             if (k*-1) > len(self.node_lst):
                 return 'out of index'
             else:
-                for i in self.node_lst:
-                    if self.node_lst.index(i) == k+len(self.node_lst):
+                for idx, i in enumerate(self.node_lst):
+                    if idx == k+len(self.node_lst):
                         return i
         else:
-            for i in reversed(self.node_lst):
-                if self.node_lst.index(i) == k:
+            for idx, i in enumerate(self.node_lst[::-1]):
+                if idx == k:
                     return i
 
     def __str__(self):

@@ -18,3 +18,7 @@ The linked list is alternative to an array-based structure. A linked list is col
 ## Solution
 
 `kthFromEnd` a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
+
+## Whiteboard
+
+![ll-kth-from-end](../asserts/ll-kth-from-end.png)
