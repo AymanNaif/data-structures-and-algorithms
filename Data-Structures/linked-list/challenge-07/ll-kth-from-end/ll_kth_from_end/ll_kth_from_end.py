@@ -90,8 +90,6 @@ class LinkedList:
         current.next = node
         self.node_lst.insert(counter, current.next.value)
 
-        return self.__str__()
-
     def insertAfter(self, value, new_value):
         """
         add Node After specific one
@@ -108,8 +106,6 @@ class LinkedList:
         node.next = current.next
         current.next = node
         self.node_lst.insert(counter, current.next.value)
-
-        return self.__str__()
 
     def kthFromEnd(self, k):
         """

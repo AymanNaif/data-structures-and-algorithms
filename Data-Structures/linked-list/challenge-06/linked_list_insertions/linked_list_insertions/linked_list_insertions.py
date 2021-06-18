@@ -79,7 +79,6 @@ class LinkedList:
 
         node.next = current.next
         current.next = node
-        return self.__str__()
 
     def insertAfter(self, value, new_value):
         current = self.head
@@ -91,7 +90,6 @@ class LinkedList:
 
         node.next = current.next
         current.next = node
-        return self.__str__()
 
     def __str__(self):
 
