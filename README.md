@@ -12,5 +12,5 @@
 | Section six   | [challenge 06](Data-Structures/challenge-06/linked_list_insertions/README.md)                                        |
 | Section seven | [challenge 07](Data-Structures/challenge-07/ll-kth-from-end/README.md)                                               |
 | Section eight | [challenge 08](Data-Structures/challenge-08/ll_zip/README.md)                                                        |
-| Section nine  | [challenge 09](Data-Structures/stacks_and_queues/stacks_and_queues/README.md)                                        |
-| Section ten   |
+| Section nine  | [challenge 09](https://docs.google.com/spreadsheets/d/1WN-JrFp3wsV2XioFocBZaRwkR15zy0isUdQRXvtIi4A/edit#gid=0)       |
+| Section ten   | [challenge 10](Data-Structures/stacks_and_queues/stacks_and_queues/README.md)                                        |
