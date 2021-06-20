@@ -41,7 +41,7 @@ def test_multiple_pop(stack_4_vals):  # 4
     stack_4_vals.pop()
     stack_4_vals.pop()
     actual = stack_4_vals.pop()
-    expected = None
+    expected = 3
     assert actual == expected
 
 # Can successfully peek the next item on the stack
@@ -90,7 +90,7 @@ def test_multiple_enqueue(queue_vals):  # 9
 
 def test_dequeue(queue_vals):  # 10
     actual = queue_vals.dequeue()
-    expected = None
+    expected = 8
     assert actual == expected
 
 # Can successfully peek into a queue, seeing the expected value
@@ -108,7 +108,7 @@ def test_multiple_dequeues(queue_vals):  # 12
     queue_vals.dequeue()
     queue_vals.dequeue()
     actual = queue_vals.dequeue()
-    expected = None
+    expected = -4
     assert actual == expected
 
 

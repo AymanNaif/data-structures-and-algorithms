@@ -22,7 +22,9 @@ class Stack:
             # raise ValueError('empty stack')
             return 'empty stack'
         else:
+            pop_item = self.top
             self.top = self.top.next
+        return pop_item.value
 
     def peek(self):
         if self.is_empty():
@@ -47,22 +49,17 @@ class Queue:
             self.rear = node
             self.front = node
         else:
-            node.next = self.rear
+            self.rear.next = node
             self.rear = node
 
     def dequeue(self):
         if self.is_empty():
-            # raise ValueError('empty queue') NOTE : I don't know how to expected it on test file
             return 'empty queue'
         else:
-
-            self.front = None
-            current = self.rear
-
-            while current.next != None:
-
-                current = current.next
-                self.front = current
+            dequeue_value = self.front
+            self.front = self.front.next
+            dequeue_value.next = None
+            return dequeue_value.value
 
     def is_empty(self):
         return self.rear == None
@@ -72,11 +69,14 @@ class Queue:
 
 
 if __name__ == "__main__":
-    queue = Queue()
-    queue.enqueue(8)
-    queue.enqueue('hi')
-    queue.enqueue(-4)
-    queue.enqueue(6)
+    queue_test = Queue()
+    queue_test.enqueue(8)
+    queue_test.enqueue('hi')
+    queue_test.enqueue(-4)
+    queue_test.enqueue(6)
+    queue_test.dequeue()
+    queue_test.dequeue()
 
-    actual = queue.dequeue()
-    print(actual)
+    print(queue_test.dequeue())
+    # print(queue.front.value)
+    # queue.dequeue()
