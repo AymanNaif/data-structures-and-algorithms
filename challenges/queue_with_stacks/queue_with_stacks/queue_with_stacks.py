@@ -1,43 +1,6 @@
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None
+from ..assets.stacks_and_queues import Stack, Node
 
-
-class Stack:
-    def __init__(self,):
-        self.top = None
-
-    def push(self, item):
-
-        node = Node(item)
-        node.next = self.top
-        self.top = node
-
-    def pop(self):
-        if self.is_empty():
-            return 'empty stack'
-        else:
-            pop_item = self.top
-            self.top = self.top.next
-        return pop_item.value
-
-    def is_empty(self):
-        return self.top == None
-
-    def __str__(self):
-
-        strr = ''
-        current = self.top
-        while current is not None:
-            if current.next is None:
-                strr = strr + f'[{current.value}]'
-                current = current.next
-            else:
-                strr = strr + f'[{current.value}]->'
-                current = current.next
-
-        return strr
+# assets/stacks_and_queues.py
 
 
 class PseudoQueue:
@@ -74,7 +37,7 @@ if __name__ == "__main__":
     pss.stack = stack
     pss.enqueue('u')
     pss.enqueue('t')
-    pss.enqueue('  ^___^')
+    pss.enqueue('^___^')
     # print(pss.enqueue(5))
     # print(stack)
     pss.dequeue()
