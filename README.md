@@ -17,3 +17,5 @@
 | Section eleven   | [challenge 11](challenges/queue_with_stacks/README.md)                                                               |
 | Section twelve   | [challenge 12](challenges/fifo_animal_shelter/README.md)                                                             |
 | Section thirteen | [challenge 13](challenges/multi_bracket_validation/README.md)                                                        |
+| Section fourteen | [challenge 14](https://docs.google.com/spreadsheets/d/1m1fUckd_rjXtIc-50U2ozWW3ov9zcRr19XEaVD6dhPo/edit#gid=0)       |
+| Section fifteen  | [challenge 15](Data-Structures/trees/README.md)                                                                      |
