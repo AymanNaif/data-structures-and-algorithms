@@ -76,6 +76,27 @@ class BinaryTree:
         except:
             print("something went wrong please try again")
 
+    def maximum_value(self):
+        """
+            find the maximum value in the numaric tree
+        """
+        if not self.root:
+            return "the tree is empty!"
+
+        max_val = self.root.value
+
+        def _max_value(node):
+            nonlocal max_val
+            if not node:
+                return
+            if node.value > max_val:
+                max_val = node.value
+
+            _max_value(node.left)
+            _max_value(node.right)
+        _max_value(self.root)
+        return max_val
+
 
 class BinarySearchTree(BinaryTree):
     def __init__(self):
@@ -126,3 +147,14 @@ class BinarySearchTree(BinaryTree):
                         node = node.right
         except:
             print("something went wrong please try again")
+
+
+if __name__ == '__main__':
+    tree = BinarySearchTree()
+    tree.add(10)
+    tree.add(20)
+    tree.add(9)
+    tree.add(11)
+    tree.add(5)
+
+    print(tree.maximum_value())

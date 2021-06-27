@@ -57,3 +57,13 @@ def test_post_order():
     actual = tree.post_order()
     excepted = [9, 11, 10]
     assert actual == excepted
+
+
+def test_max_value():
+    tree = BinarySearchTree()
+    tree.add(10)
+    tree.add(20)
+    tree.add(9)
+    tree.add(11)
+    tree.add(5)
+    assert tree.maximum_value() == 20
