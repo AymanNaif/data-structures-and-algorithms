@@ -6,6 +6,8 @@
 
 - Write instance methods of a Binary Tree pre-order, in-order and post-order which show a list of the tree values in these traversal orders. Write instance methods of a Binary Search Tree add and contains which update and read a Binary Search Tree for a value in time O(log n).
 
+- write method in BinaryTree class that find the maximum value in a numaric tree
+
 ## Approach & Efficiency
 
 - API methods of instances of a Binary Tree and a Binary Search Tree pre-order, in-order and post-order take Big O time O(n) and space O(1). The API method of instances of a Binary Search Tree add and contains take Big O time O(log n) and space O(1).
@@ -13,3 +15,7 @@
 ## API
 
 - The API instance methods for a Binary Tree and Binary Search Tree are pre-order, in-order and post-order. The API instance methods for a Binary Search Tree are add and contains.
+
+## White Board
+
+![max_value](./assets/max_value.png)
