@@ -21,4 +21,5 @@
 | Section fifteen   | [challenge 15](Data-Structures/trees/README.md)                                                                      |
 | Section sixteen   | [challenge 16](Data-Structures/trees/README.md)                                                                      |
 | Section seventeen | [challenge 17](challenges/tree-breadth-first/README.md)                                                              |
-| Section eightteen | [challenge 17](challenges/tree-fizz-buzz/README.md)                                                                  |
+| Section eightteen | [challenge 18](challenges/tree-fizz-buzz/README.md)                                                                  |
+| Section nineteen  | [challenge 19](challenges/insertion-sort/README.md)                                                                  |
