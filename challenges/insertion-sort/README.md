@@ -1,19 +1,17 @@
-# Code Challenge 27 - Merge Sort
+# Code Challenge 26
 
-Merge Sort on a given array.
-
-- note : Merge sort is a divide and conquer sorting algorithm. It recursiveley splits each portion of the origin array until it's comparing only two arrays with a single element each. It then merges the sorted subarrays back together.
+Implement insertion sort on a given array.
 
 ## Tests
 
-- test_empty_list - Test that empty list is handled correctly.
-- test_one_item_list - Test that single list item is handled correctly.
-- test_two_item_list - Test that list with two items is handled correctly.
-- test_many_item_list - Test that normal list is handled correctly.
+- test_unsorted, Test that unsorted is sorted
+- test_reverse_sorted, Test that reversed array is sorted correctly
+- test_few_uniques, Test that array with duplicate values is sorted correctly
+- test_nearly_sorted, Test that nearly sorted array is sorted correctly
 
 ## Challenge
 
-- Provide a visual step through in BLOG.md for one of the sample arrays based on the provided pseudo code
+- Provide a visual step through in BLOG.md for each of the sample arrays based on the provided pseudo code
 - Convert the pseudo-code into working code in your language
 - Present a complete set of working tests
 
