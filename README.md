@@ -23,3 +23,4 @@
 | Section seventeen | [challenge 17](challenges/tree-breadth-first/README.md)                                                              |
 | Section eightteen | [challenge 18](challenges/tree-fizz-buzz/README.md)                                                                  |
 | Section nineteen  | [challenge 19](challenges/insertion-sort/README.md)                                                                  |
+| Section twenty    | [challenge 20](challenges/merge-sort/README.md)                                                                      |
