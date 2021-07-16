@@ -21,3 +21,7 @@ Merge Sort on a given array.
 
 - time <- O(n)
 - space <- O(n)
+
+## White Board
+
+![merge-sort](assets/merge-sort.jpg)
