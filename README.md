@@ -25,3 +25,4 @@
 | Section nineteen   | [challenge 19](challenges/insertion-sort/README.md)                                                                  |
 | Section twenty     | [challenge 20](challenges/merge-sort/README.md)                                                                      |
 | Section twenty one | [challenge 21](challenges/quick-sort/README.md)                                                                      |
+| Section twenty two | [challenge 22](Data-Structures/hash-table/README.md)                                                                 |

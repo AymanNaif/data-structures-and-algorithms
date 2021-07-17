@@ -1,0 +1,3 @@
+{
+  "python.analysis.extraPaths": ["./linked-list/challenge-05/linked-list"]
+}
