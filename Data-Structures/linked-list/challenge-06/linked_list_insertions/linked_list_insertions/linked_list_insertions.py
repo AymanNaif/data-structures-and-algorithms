@@ -65,6 +65,7 @@ class LinkedList:
             return False
 
     # ---------> { 74 } -> { True } -> { ayman } -> { 0 } -> NULL" ---> { 74 } -> { hello world } -> { True } -> { ayman } -> { 0 } -> NULL"
+
     def insertBefore(self, value, new_value):
         current = self.head
         node = Node(new_value)
@@ -72,14 +73,14 @@ class LinkedList:
             node.next = current
             current = node
 
-        while current.next is not None:
+        while current.next:
             if current.next.value == value:
+                node.next = current.next
+                current.next = node
                 break
-            current = current.next
-
-        node.next = current.next
-        current.next = node
-
+            else:
+                current = current.next
+                
     def insertAfter(self, value, new_value):
         current = self.head
         node = Node(new_value)
