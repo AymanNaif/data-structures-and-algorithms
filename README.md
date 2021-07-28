@@ -28,3 +28,4 @@
 | Section twenty two   | [challenge 22](Data-Structures/hash-table/README.md)                                                                 |
 | Section twenty three | [challenge 23](challenges/repeated_word/README.md)                                                                   |
 | Section twenty four  | [challenge 24](challenges/tree_intersection/README.md)                                                               |
+| Section twenty five  | [challenge 24](challenges/left_join/README.md)                                                                       |
