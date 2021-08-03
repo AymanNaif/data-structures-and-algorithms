@@ -1,3 +1,6 @@
+from ...stacks_and_queues.stacks_and_queues.stacks_and_queues.stacks_and_queues import Queue
+
+
 class Vertix:
     def __init__(self, value):
         self.value = value
@@ -53,29 +56,24 @@ class Graph:
             output += '\n'
         return output
 
+    def breadth_first(self, node):
+        node_lst = []
+        queue = Queue()
+        visit_node = set()
 
-if __name__ == '__main__':
-    graph = Graph()
-    a = graph.add_node('a')
-    b = graph.add_node('b')
-    c = graph.add_node('c')
-    d = graph.add_node('d')
-    e = graph.add_node('e')
-    f = graph.add_node('f')
-    graph.add_edge(a, c)
-    graph.add_edge(a, d)
-    graph.add_edge(b, c)
-    graph.add_edge(b, f)
-    graph.add_edge(c, a)
-    graph.add_edge(c, b)
-    graph.add_edge(c, e)
-    graph.add_edge(d, a)
-    graph.add_edge(d, e)
-    graph.add_edge(e, c)
-    graph.add_edge(e, d)
-    graph.add_edge(e, f)
-    graph.add_edge(f, b)
-    graph.add_edge(f, e)
-    # print(graph)
-    # print(graph.get_neighbors(a))
-    print(graph.adjacency_list)
+        if node not in self.adjacency_list or self.adjacency_list[node] == []:
+            return None
+
+        queue.enqueue(node)
+        visit_node.add(node.value)
+
+        while not queue.isEmpty():
+            vertix = queue.dequeue()
+            node_lst.append(vertix.value)
+
+            for edge in self.adjacency_list[vertix]:
+                if edge.node.value not in visit_node:
+                    visit_node.add(edge.node.value)
+                    queue.enqueue(edge.node)
+
+        return node_lst
