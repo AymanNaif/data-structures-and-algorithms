@@ -30,3 +30,5 @@
 | Section twenty four  | [challenge 24](challenges/tree_intersection/README.md)                                                               |
 | Section twenty five  | [challenge 25](challenges/left_join/README.md)                                                                       |
 | Section twenty six   | [challenge 26](Data-Structures/graph/README.md)                                                                      |
+| Section twenty seven | [challenge 27](Data-Structures/graph/README.md)                                                                      |
+| Section twenty eight | [challenge 28](challenges/graph_business_trip/README.md)                                                             |
